@@ -26,11 +26,11 @@ function modelLoaded(){
 console.log("modeloCargado");
 }
 function gotPoses(results){
-if(results.lenth>0){
+if(results.length>0){
 console.log("results");
 console.log("nose Y="+results[0].pose.nose.y);
 console.log("nose X="+results[0].pose.nose.x);
-narizx = results[0].pose.nose.x;
-narizy = results[0].pose.nose.y; 
+narizx = results[0].pose.nose.x-50;
+narizy = results[0].pose.nose.y-100; 
 }
 }
